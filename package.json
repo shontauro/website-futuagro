@@ -1,0 +1,50 @@
+{
+  "name": "website-futuagro",
+  "version": "1.0.0",
+  "description": "Official website for www.futuagro.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "format": "prettier --write \"**/*.+(js|jsx)\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format",
+      "pre-push": "npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shontauro/website-futuagro.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react"
+  ],
+  "author": "Fabian Leon Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shontauro/website-futuagro/issues"
+  },
+  "homepage": "https://github.com/shontauro/website-futuagro#readme",
+  "dependencies": {
+    "next": "^9.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "husky": "^3.0.5",
+    "prettier": "^1.18.2"
+  }
+}
