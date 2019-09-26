@@ -1,6 +1,6 @@
 import Header from './Header'
 import Head from 'next/head'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const layoutStyle = {
   margin: 20,
@@ -19,7 +19,7 @@ const MainLayout = (props) => (
 )
 
 MainLayout.propTypes = {
-    children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default MainLayout
