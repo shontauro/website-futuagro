@@ -1,9 +1,9 @@
 import Page from '../src/layouts/MainLayout'
 
-const Index = () => (
+const About = () => (
   <Page>
-    <p>Hello Next.js</p>
+    <p>About page</p>
   </Page>
 )
 
-export default Index
+export default About
